@@ -61,6 +61,8 @@ A api Link-Shortener foi criada no intuito de proporcionar um backend para aplic
   git clone https://github.com/Biguelini/Link-Shortener.git
   cd Link-Shortener/link-shortener/
   instale o maven e o jdk 17 na sua máquina
+  rode um banco de dados mysql na porta 3306 do seu localhost
+  crie uma base de dados chamada links
   mvn spring-boot:run
 ```
 
