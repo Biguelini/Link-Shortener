@@ -12,6 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import com.example.demo.exceptions.ConflictException;
 import com.example.demo.exceptions.ExceptionResponse;
+import com.example.demo.exceptions.ResourceNotFoundException;
 import com.example.demo.exceptions.UnauthorizedException;
 
 @ControllerAdvice
@@ -35,5 +36,11 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
 				request.getDescription(false));
 		return new ResponseEntity<>(exceptionResponse, HttpStatus.CONFLICT);
+	}
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public final ResponseEntity<ExceptionResponse> handleResourceNotFoundExceptions(Exception ex, WebRequest request) {
+		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
+				request.getDescription(false));
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_FOUND);
 	}
 }
