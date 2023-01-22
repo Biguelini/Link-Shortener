@@ -2,11 +2,16 @@
 
 ## Índice :memo:
 #### ✏️ [Sobre](https://github.com/Biguelini/Link-Shortener#sobre)
+#### :dart:	[Rotas](https://github.com/Biguelini/Link-Shortener#rotas)
 #### 🚀 [Objetivos](https://github.com/Biguelini/Link-Shortener#objetivos)
 #### 💻	[Tecnologias](https://github.com/Biguelini/Link-Shortener#tecnologias)
+
+
 ## Sobre
 A api Link-Shortener foi criada no intuito de proporcionar um backend para aplicações de encurtamento de links, de maneira fácil e rápida.
+
 ## Rotas
+
 #### Listar todos os links
 
 `GET /`
@@ -63,8 +68,10 @@ A api Link-Shortener foi criada no intuito de proporcionar um backend para aplic
 - [X] Criar um CRUD
 - [X] Utilizar VO
 - [ ] Autenticalção JWT
+
 ## Tecnologias
 * SpringBoot
+
 #### Como contribuir 
 ```
 Faça o fork do projeto e o clone local.
